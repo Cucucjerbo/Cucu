@@ -3,13 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Links Example</title>
+    <title>Favorite Courses and Foods</title>
     <style>
- 
+        ul.courses {
+            list-style-type: circle;
+        }
+        ul.courses li {
+            margin: 5px 0;
+        }
+
+        ol.foods {
+            list-style-type: upper-roman;
+        }
+        ol.foods li {
+            margin: 5px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: yellow;
+        }
+        td {
+            height: 50px;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: blue;
+        }
         a:link {
             color: blue;
             background-color: lightyellow;
-            font-family: cucu, paul-jerbo;
+            font-family: cucu, paul-jerbo, Arial, sans-serif; /* Added fallback fonts */
             text-decoration: none;
             padding: 5px;
             display: inline-block;
@@ -33,7 +68,48 @@
     </style>
 </head>
 <body>
-    <h1>ASSIGNMENT#5</h1>
+    <h1>My Favorite Courses and Foods</h1>
+
+    <h2>Favorite Courses</h2>
+    <ul class="courses">
+        <li>Web Development</li>
+        <li>Data Science</li>
+        <li>Machine Learning</li>
+    </ul>
+
+    <h2>Favorite Foods</h2>
+    <ol class="foods">
+        <li>Pizza</li>
+        <li>Sushi</li>
+        <li>Chocolate Cake</li>
+    </ol>
+
+    <h2>Styled Table</h2>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Duration</th>
+            <th>Instructor</th>
+        </tr>
+        <tr>
+            <td>Web Development</td>
+            <td>3 months</td>
+            <td>John Doe</td>
+        </tr>
+        <tr>
+            <td>Data Science</td>
+            <td>4 months</td>
+            <td>Jane Smith</td>
+        </tr>
+        <tr>
+            <td>Machine Learning</td>
+            <td>5 months</td>
+            <td>Emily Johnson</td>
+        </tr>
+    </table>
+
+    <a href="firstpage.html">Go to the first page</a>
+    
     <ul>
         <li><a href="https://www.google.com" target="_blank">Google</a></li>
         <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
