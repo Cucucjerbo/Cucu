@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Guys Online and Offline Marketing - Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .search-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .search-container h1 {
+            color: #333;
+        }
+        .search-box {
+            padding: 10px;
+            width: 80%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .search-button:hover {
+            background-color: #218838;
+        }
+        
+        /* Add a sky-blue background color to the top navigation */
+        .topnav { 
+            overflow: hidden;
+            background-color: skyblue; 
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: black;
+            color: white;
+        }
+
+        /* Right-aligned section inside the top navigation */
+        .topnav-right {
+            float: right;
+        }
+        
+        /* Adjust page content to account for fixed navbar */
+        .content {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <div class="topnav">
+        <a href="leemu3.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <div class="topnav-right">
+            <a href="about.html">About</a>
+            <a href="product.html">Product</a>
+            <a href="#search">Search</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <div class="search-container">
+            <h1>Good Guys Online and Offline Marketing</h1>
+            <p>Find what you need across all marketing solutions!</p>
+            <form action="/search" method="GET">
+                <input type="text" name="q" placeholder="Search..." class="search-box">
+                <br>
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
